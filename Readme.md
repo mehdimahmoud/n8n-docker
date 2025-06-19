@@ -33,12 +33,12 @@ This guide will help you deploy n8n locally using Docker Compose, ensuring your 
 1. **Clone this repository**
   
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/mehdimahmoud/n8n-docker.git 
    cd n8n-docker
    ```
 
-2. **Create the Docker volume (if not already created)**  
-
+2. **Create the Docker volume (optional)**  
+   This step is optional, as the volume would be created in step 4 from the docker-compose.yml file.
    ```sh
    docker volume create n8n_data
    ```
