@@ -39,6 +39,7 @@ This guide will help you deploy n8n locally using Docker Compose, ensuring your 
 
 2. **Create the Docker volume (optional)**  
    This step is optional, as the volume would be created in step 4 from the docker-compose.yml file.
+
    ```sh
    docker volume create n8n_data
    ```
@@ -96,7 +97,6 @@ docker compose start
 
 ### Backup n8n Data
 
-```sh
 ```sh
 docker run --rm -v n8n_data:/data -v $(pwd):/backup ubuntu bash -c 'tar czvf /backup/n8n_data_backup_$(date +%Y%m%d_%H%M%S).tar.gz -C /data .'
 ```
