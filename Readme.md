@@ -1,4 +1,4 @@
-# n8n local Docker Compose Deployment
+# N8N local Docker Compose Deployment
 
 This project offers a straightforward and secure method to run [n8n](https://n8n.io/) with Docker Compose on Ubuntu.  
 n8n is an open-source workflow automation tool that allows you to connect various applications and services to automate tasks without writing code.  
