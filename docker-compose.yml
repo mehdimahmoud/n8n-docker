@@ -12,7 +12,9 @@ services:
       # Enforce strict permissions on settings file (recommended for security)
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       # Enable n8n runners for distributed workflows (true/false)
-      - N8N_RUNNERS_ENABLED=true
+      # - N8N_RUNNERS_ENABLED=true # deprecated in 2.25.5
+      # Enable installation of community packages from https://www.npmjs.com/package
+      - N8N_COMMUNITY_PACKAGES_ENABLED=true
       # Hostname for n8n instance (used for URL generation)
       - N8N_HOST=localhost
       # Port for n8n to listen on inside the container
